@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="FurkanTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFd-mD-ekY">
+                                <rect key="frame" x="103" y="44" width="208" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Appcent NewsApp">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="TimesNewRomanPS-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-jA-xHW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XAe-z5-tcu"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JNA-RH-LIe">
+                                <rect key="frame" x="0.0" y="132" width="423" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zkv-jA-xHW" firstAttribute="top" secondItem="VFd-mD-ekY" secondAttribute="bottom" constant="15" id="2io-mD-Xc0"/>
+                            <constraint firstItem="JNA-RH-LIe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dav-oL-zQF"/>
+                            <constraint firstItem="Zkv-jA-xHW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EC2-jM-0LB"/>
+                            <constraint firstItem="JNA-RH-LIe" firstAttribute="top" secondItem="Zkv-jA-xHW" secondAttribute="bottom" id="GCi-4f-Gfy"/>
+                            <constraint firstItem="VFd-mD-ekY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hlg-F3-jl9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JNA-RH-LIe" secondAttribute="trailing" constant="-29" id="HtC-Be-hci"/>
+                            <constraint firstItem="VFd-mD-ekY" firstAttribute="centerX" secondItem="Zkv-jA-xHW" secondAttribute="centerX" id="Oe9-wJ-7n8"/>
+                            <constraint firstItem="VFd-mD-ekY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gqA-rH-brM"/>
+                            <constraint firstItem="Zkv-jA-xHW" firstAttribute="leading" secondItem="JNA-RH-LIe" secondAttribute="leading" id="wE2-pJ-PHw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="Zkv-jA-xHW" id="EYX-Fc-GxK"/>
+                        <outlet property="tableView" destination="JNA-RH-LIe" id="JIa-Ip-ku0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="72.991071428571431"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="nyh-vE-WaK">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="lnW-wD-Wuh" customClass="SplashVC" customModule="FurkanTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oCn-ft-Y0w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3cM-jJ-9q7"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E4T-og-ume"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apl-yx-alp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

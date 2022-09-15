@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C65013828D340D4002B10C5 /* newsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65013728D340D4002B10C5 /* newsApiModel.swift */; };
+		4C65013F28D34833002B10C5 /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65013D28D34833002B10C5 /* HomeCellTableViewCell.swift */; };
+		4C65014028D34833002B10C5 /* HomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C65013E28D34833002B10C5 /* HomeCellTableViewCell.xib */; };
+		4C65014228D34872002B10C5 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65014128D34872002B10C5 /* UITableViewCell+Extensions.swift */; };
+		4C65014428D34DFF002B10C5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65014328D34DFF002B10C5 /* UIImageView+Extension.swift */; };
+		4C65014B28D35317002B10C5 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65014928D35317002B10C5 /* DetailVC.swift */; };
+		4C65014E28D3532D002B10C5 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65014D28D3532D002B10C5 /* DetailVM.swift */; };
+		4C65015028D362C7002B10C5 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C65014F28D362C6002B10C5 /* Detail.storyboard */; };
+		4C8817FB28D3677500A88FAF /* NewsSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8817FA28D3677500A88FAF /* NewsSourceVC.swift */; };
+		4C8817FD28D367A400A88FAF /* NewsSourceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8817FC28D367A400A88FAF /* NewsSourceVM.swift */; };
+		4C8817FF28D367CC00A88FAF /* NewsSource.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8817FE28D367CC00A88FAF /* NewsSource.storyboard */; };
+		4C88180128D3689400A88FAF /* FavoriteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88180028D3689400A88FAF /* FavoriteVM.swift */; };
+		5491E76A9E57037C4AC06FFF /* Pods_FurkanTask_FurkanTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D78EF1C09764BC0EF85D09 /* Pods_FurkanTask_FurkanTaskUITests.framework */; };
+		5EECC77D27C28577000A5F5A /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EECC77C27C28577000A5F5A /* FavoriteVC.swift */; };
+		5EECC77F27C28ACC000A5F5A /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EECC77E27C28ACC000A5F5A /* Favorite.storyboard */; };
+		96354C112663D2A900144938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96354C102663D2A900144938 /* AppDelegate.swift */; };
+		96354C132663D2A900144938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96354C122663D2A900144938 /* SceneDelegate.swift */; };
+		96354C152663D2A900144938 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96354C142663D2A900144938 /* HomeVC.swift */; };
+		96354C1A2663D2AA00144938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96354C192663D2AA00144938 /* Assets.xcassets */; };
+		96354C1D2663D2AA00144938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96354C1B2663D2AA00144938 /* LaunchScreen.storyboard */; };
+		96354C282663D2AA00144938 /* FurkanTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96354C272663D2AA00144938 /* FurkanTaskTests.swift */; };
+		96354C332663D2AA00144938 /* FurkanTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96354C322663D2AA00144938 /* FurkanTaskTests.swift */; };
+		96B745AC27C29AC200DE99A4 /* UITabbarController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B745AB27C29AC200DE99A4 /* UITabbarController+Extensions.swift */; };
+		96B745AE27C29C8600DE99A4 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B745AD27C29C8600DE99A4 /* AppConstants.swift */; };
+		96B745B027C4076700DE99A4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B745AF27C4076700DE99A4 /* UIViewController+Extensions.swift */; };
+		96DCF7AC26679647002563A5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF7AB26679647002563A5 /* SideMenu.swift */; };
+		96DCF7AE266796F6002563A5 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF7AD266796F6002563A5 /* SideMenuVC.swift */; };
+		96DCF7B02667A37A002563A5 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DCF7AF2667A37A002563A5 /* SideMenu.storyboard */; };
+		96DCF7B22667AAA1002563A5 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF7B12667AAA1002563A5 /* SlideInTransition.swift */; };
+		96ED5746266CBC8400303541 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED5745266CBC8400303541 /* NetworkManager.swift */; };
+		96ED5748266CC03A00303541 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED5747266CC03A00303541 /* HomeVM.swift */; };
+		96ED574A266CC04F00303541 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED5749266CC04F00303541 /* BaseVM.swift */; };
+		96F1FEB12664BD1000644FD6 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1FEB02664BD1000644FD6 /* UIApplication+Extensions.swift */; };
+		96F1FEB42664DEC200644FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F1FEB22664DEC100644FD6 /* Main.storyboard */; };
+		96F1FEB72664F77400644FD6 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1FEB62664F77400644FD6 /* TabbarVC.swift */; };
+		96FEBF8D2664099300742D3C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEBF8C2664099300742D3C /* AppManager.swift */; };
+		96FEBF8F266409C600742D3C /* AppDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEBF8E266409C600742D3C /* AppDirector.swift */; };
+		96FEBF9226640CB100742D3C /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEBF9126640CB100742D3C /* SplashVC.swift */; };
+		96FEBF9526640CE100742D3C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEBF9426640CE100742D3C /* BaseVC.swift */; };
+		E33F756D795BCF33DFE1C332 /* Pods_FurkanTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1120F716E29073E846CEA96 /* Pods_FurkanTaskTests.framework */; };
+		FCCFE973D8D8A379301BA28E /* Pods_FurkanTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F925A9FD73D0AF8262234D4 /* Pods_FurkanTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96354C242663D2AA00144938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96354C052663D2A900144938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96354C0C2663D2A900144938;
+			remoteInfo = WordpressiOS;
+		};
+		96354C2F2663D2AA00144938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96354C052663D2A900144938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96354C0C2663D2A900144938;
+			remoteInfo = WordpressiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F925A9FD73D0AF8262234D4 /* Pods_FurkanTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurkanTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A4D9A52B5EE0589A9F4A57 /* Pods-FurkanTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTask.debug.xcconfig"; path = "Target Support Files/Pods-FurkanTask/Pods-FurkanTask.debug.xcconfig"; sourceTree = "<group>"; };
+		376940BDFB10A059934A39D3 /* Pods-FurkanTask-FurkanTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTask-FurkanTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-FurkanTask-FurkanTaskUITests/Pods-FurkanTask-FurkanTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA020E05EDE868A02AC87D0 /* Pods-WordpressiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOSTests.release.xcconfig"; path = "Target Support Files/Pods-WordpressiOSTests/Pods-WordpressiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		4735E0EAA96B13002B060A15 /* Pods-WordpressiOS-WordpressiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOS-WordpressiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordpressiOS-WordpressiOSUITests/Pods-WordpressiOS-WordpressiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C65013728D340D4002B10C5 /* newsApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsApiModel.swift; sourceTree = "<group>"; };
+		4C65013D28D34833002B10C5 /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
+		4C65013E28D34833002B10C5 /* HomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCellTableViewCell.xib; sourceTree = "<group>"; };
+		4C65014128D34872002B10C5 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		4C65014328D34DFF002B10C5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4C65014928D35317002B10C5 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		4C65014D28D3532D002B10C5 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		4C65014F28D362C6002B10C5 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		4C8817FA28D3677500A88FAF /* NewsSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourceVC.swift; sourceTree = "<group>"; };
+		4C8817FC28D367A400A88FAF /* NewsSourceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourceVM.swift; sourceTree = "<group>"; };
+		4C8817FE28D367CC00A88FAF /* NewsSource.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsSource.storyboard; sourceTree = "<group>"; };
+		4C88180028D3689400A88FAF /* FavoriteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVM.swift; sourceTree = "<group>"; };
+		57918396F69FC12E5F3C5CA5 /* Pods-WordpressiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOS.debug.xcconfig"; path = "Target Support Files/Pods-WordpressiOS/Pods-WordpressiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5B97560140D5B4A03BCA5516 /* Pods-WordpressiOS-WordpressiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOS-WordpressiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-WordpressiOS-WordpressiOSUITests/Pods-WordpressiOS-WordpressiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EECC77C27C28577000A5F5A /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		5EECC77E27C28ACC000A5F5A /* Favorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		78D69B1F283310B979D00BC5 /* Pods-FurkanTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTaskTests.release.xcconfig"; path = "Target Support Files/Pods-FurkanTaskTests/Pods-FurkanTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		8231840DE5760BAC556A09F0 /* Pods-FurkanTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-FurkanTaskTests/Pods-FurkanTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B8930B549EC336CC5451DF2 /* Pods-FurkanTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTask.release.xcconfig"; path = "Target Support Files/Pods-FurkanTask/Pods-FurkanTask.release.xcconfig"; sourceTree = "<group>"; };
+		96354C0D2663D2A900144938 /* FurkanTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurkanTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96354C102663D2A900144938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96354C122663D2A900144938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		96354C142663D2A900144938 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		96354C192663D2AA00144938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96354C1C2663D2AA00144938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96354C1E2663D2AA00144938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96354C232663D2AA00144938 /* FurkanTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurkanTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96354C272663D2AA00144938 /* FurkanTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurkanTaskTests.swift; sourceTree = "<group>"; };
+		96354C292663D2AA00144938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96354C2E2663D2AA00144938 /* FurkanTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurkanTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96354C322663D2AA00144938 /* FurkanTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurkanTaskTests.swift; sourceTree = "<group>"; };
+		96354C342663D2AA00144938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B745AB27C29AC200DE99A4 /* UITabbarController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabbarController+Extensions.swift"; sourceTree = "<group>"; };
+		96B745AD27C29C8600DE99A4 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		96B745AF27C4076700DE99A4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		96DCF7AB26679647002563A5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		96DCF7AD266796F6002563A5 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		96DCF7AF2667A37A002563A5 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		96DCF7B12667AAA1002563A5 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		96ED5745266CBC8400303541 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		96ED5747266CC03A00303541 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		96ED5749266CC04F00303541 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		96F1FEB02664BD1000644FD6 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		96F1FEB32664DEC100644FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96F1FEB62664F77400644FD6 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		96FEBF8C2664099300742D3C /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		96FEBF8E266409C600742D3C /* AppDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDirector.swift; sourceTree = "<group>"; };
+		96FEBF9126640CB100742D3C /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		96FEBF9426640CE100742D3C /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		A4FF1A9CB8D410BFFE30673D /* Pods-WordpressiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WordpressiOSTests/Pods-WordpressiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4019E55FA13B3D672CA423 /* Pods-FurkanTask-FurkanTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FurkanTask-FurkanTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-FurkanTask-FurkanTaskUITests/Pods-FurkanTask-FurkanTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1F766AF8D6843992C253BD1 /* Pods-WordpressiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordpressiOS.release.xcconfig"; path = "Target Support Files/Pods-WordpressiOS/Pods-WordpressiOS.release.xcconfig"; sourceTree = "<group>"; };
+		E1120F716E29073E846CEA96 /* Pods_FurkanTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurkanTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D78EF1C09764BC0EF85D09 /* Pods_FurkanTask_FurkanTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FurkanTask_FurkanTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96354C0A2663D2A900144938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCFE973D8D8A379301BA28E /* Pods_FurkanTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C202663D2AA00144938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33F756D795BCF33DFE1C332 /* Pods_FurkanTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C2B2663D2AA00144938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5491E76A9E57037C4AC06FFF /* Pods_FurkanTask_FurkanTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C65013628D340AC002B10C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C65013728D340D4002B10C5 /* newsApiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C65013928D3477F002B10C5 /* CustomUIs */ = {
+			isa = PBXGroup;
+			children = (
+				4C65013A28D3479C002B10C5 /* HomeCells */,
+			);
+			path = CustomUIs;
+			sourceTree = "<group>";
+		};
+		4C65013A28D3479C002B10C5 /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				4C65013D28D34833002B10C5 /* HomeCellTableViewCell.swift */,
+				4C65013E28D34833002B10C5 /* HomeCellTableViewCell.xib */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		4C65014628D352D9002B10C5 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4C65014928D35317002B10C5 /* DetailVC.swift */,
+				4C65014D28D3532D002B10C5 /* DetailVM.swift */,
+				4C65014F28D362C6002B10C5 /* Detail.storyboard */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		4C8817F928D3676600A88FAF /* NewsSource */ = {
+			isa = PBXGroup;
+			children = (
+				4C8817FA28D3677500A88FAF /* NewsSourceVC.swift */,
+				4C8817FC28D367A400A88FAF /* NewsSourceVM.swift */,
+				4C8817FE28D367CC00A88FAF /* NewsSource.storyboard */,
+			);
+			path = NewsSource;
+			sourceTree = "<group>";
+		};
+		5EECC77B27C28549000A5F5A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				5EECC77C27C28577000A5F5A /* FavoriteVC.swift */,
+				5EECC77E27C28ACC000A5F5A /* Favorite.storyboard */,
+				4C88180028D3689400A88FAF /* FavoriteVM.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		6838F4B5BCCE93243F5B8484 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57918396F69FC12E5F3C5CA5 /* Pods-WordpressiOS.debug.xcconfig */,
+				D1F766AF8D6843992C253BD1 /* Pods-WordpressiOS.release.xcconfig */,
+				4735E0EAA96B13002B060A15 /* Pods-WordpressiOS-WordpressiOSUITests.debug.xcconfig */,
+				5B97560140D5B4A03BCA5516 /* Pods-WordpressiOS-WordpressiOSUITests.release.xcconfig */,
+				A4FF1A9CB8D410BFFE30673D /* Pods-WordpressiOSTests.debug.xcconfig */,
+				3FA020E05EDE868A02AC87D0 /* Pods-WordpressiOSTests.release.xcconfig */,
+				31A4D9A52B5EE0589A9F4A57 /* Pods-FurkanTask.debug.xcconfig */,
+				8B8930B549EC336CC5451DF2 /* Pods-FurkanTask.release.xcconfig */,
+				376940BDFB10A059934A39D3 /* Pods-FurkanTask-FurkanTaskUITests.debug.xcconfig */,
+				AF4019E55FA13B3D672CA423 /* Pods-FurkanTask-FurkanTaskUITests.release.xcconfig */,
+				8231840DE5760BAC556A09F0 /* Pods-FurkanTaskTests.debug.xcconfig */,
+				78D69B1F283310B979D00BC5 /* Pods-FurkanTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96354C042663D2A900144938 = {
+			isa = PBXGroup;
+			children = (
+				96354C0F2663D2A900144938 /* FurkanTask */,
+				96354C262663D2AA00144938 /* FurkanTaskTests */,
+				96354C312663D2AA00144938 /* FurkanTaskUITests */,
+				96354C0E2663D2A900144938 /* Products */,
+				6838F4B5BCCE93243F5B8484 /* Pods */,
+				F97541B142964861E3FECEA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96354C0E2663D2A900144938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96354C0D2663D2A900144938 /* FurkanTask.app */,
+				96354C232663D2AA00144938 /* FurkanTaskTests.xctest */,
+				96354C2E2663D2AA00144938 /* FurkanTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96354C0F2663D2A900144938 /* FurkanTask */ = {
+			isa = PBXGroup;
+			children = (
+				4C65013928D3477F002B10C5 /* CustomUIs */,
+				4C65013628D340AC002B10C5 /* Models */,
+				96FEBF892664068A00742D3C /* Extension */,
+				96FEBF882664067B00742D3C /* AppDetails */,
+				96354C402663D3A400144938 /* Scenes */,
+				96354C1E2663D2AA00144938 /* Info.plist */,
+			);
+			path = FurkanTask;
+			sourceTree = "<group>";
+		};
+		96354C262663D2AA00144938 /* FurkanTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				96354C272663D2AA00144938 /* FurkanTaskTests.swift */,
+				96354C292663D2AA00144938 /* Info.plist */,
+			);
+			path = FurkanTaskTests;
+			sourceTree = "<group>";
+		};
+		96354C312663D2AA00144938 /* FurkanTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96354C322663D2AA00144938 /* FurkanTaskTests.swift */,
+				96354C342663D2AA00144938 /* Info.plist */,
+			);
+			path = FurkanTaskUITests;
+			sourceTree = "<group>";
+		};
+		96354C402663D3A400144938 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4C65014628D352D9002B10C5 /* Details */,
+				968B5C1F27C4104B009E7AA7 /* HomeFlow */,
+				96DCF7AA26679633002563A5 /* Menu */,
+				96F1FEB52664F76100644FD6 /* Tabbar */,
+				96FEBF9326640CD800742D3C /* Base */,
+				96FEBF9026640CA800742D3C /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		96354C412663D3AC00144938 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96354C142663D2A900144938 /* HomeVC.swift */,
+				96F1FEB22664DEC100644FD6 /* Main.storyboard */,
+				96ED5747266CC03A00303541 /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		968B5C1F27C4104B009E7AA7 /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4C8817F928D3676600A88FAF /* NewsSource */,
+				5EECC77B27C28549000A5F5A /* Favorite */,
+				96354C412663D3AC00144938 /* Home */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		96DCF7AA26679633002563A5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				96DCF7AB26679647002563A5 /* SideMenu.swift */,
+				96DCF7AD266796F6002563A5 /* SideMenuVC.swift */,
+				96DCF7AF2667A37A002563A5 /* SideMenu.storyboard */,
+				96DCF7B12667AAA1002563A5 /* SlideInTransition.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		96F1FEB52664F76100644FD6 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				96F1FEB62664F77400644FD6 /* TabbarVC.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		96FEBF882664067B00742D3C /* AppDetails */ = {
+			isa = PBXGroup;
+			children = (
+				96354C102663D2A900144938 /* AppDelegate.swift */,
+				96354C122663D2A900144938 /* SceneDelegate.swift */,
+				96354C192663D2AA00144938 /* Assets.xcassets */,
+				96354C1B2663D2AA00144938 /* LaunchScreen.storyboard */,
+				96FEBF8C2664099300742D3C /* AppManager.swift */,
+				96FEBF8E266409C600742D3C /* AppDirector.swift */,
+				96ED5745266CBC8400303541 /* NetworkManager.swift */,
+				96B745AD27C29C8600DE99A4 /* AppConstants.swift */,
+			);
+			path = AppDetails;
+			sourceTree = "<group>";
+		};
+		96FEBF892664068A00742D3C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96B745AF27C4076700DE99A4 /* UIViewController+Extensions.swift */,
+				96F1FEB02664BD1000644FD6 /* UIApplication+Extensions.swift */,
+				96B745AB27C29AC200DE99A4 /* UITabbarController+Extensions.swift */,
+				4C65014128D34872002B10C5 /* UITableViewCell+Extensions.swift */,
+				4C65014328D34DFF002B10C5 /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96FEBF9026640CA800742D3C /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				96FEBF9126640CB100742D3C /* SplashVC.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		96FEBF9326640CD800742D3C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				96FEBF9426640CE100742D3C /* BaseVC.swift */,
+				96ED5749266CC04F00303541 /* BaseVM.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F97541B142964861E3FECEA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F925A9FD73D0AF8262234D4 /* Pods_FurkanTask.framework */,
+				E9D78EF1C09764BC0EF85D09 /* Pods_FurkanTask_FurkanTaskUITests.framework */,
+				E1120F716E29073E846CEA96 /* Pods_FurkanTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96354C0C2663D2A900144938 /* FurkanTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96354C372663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTask" */;
+			buildPhases = (
+				FBE6CE792085313CB1550146 /* [CP] Check Pods Manifest.lock */,
+				96354C092663D2A900144938 /* Sources */,
+				96354C0A2663D2A900144938 /* Frameworks */,
+				96354C0B2663D2A900144938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FurkanTask;
+			productName = WordpressiOS;
+			productReference = 96354C0D2663D2A900144938 /* FurkanTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96354C222663D2AA00144938 /* FurkanTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96354C3A2663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTaskTests" */;
+			buildPhases = (
+				0F9B32584EA89BEECD707CC0 /* [CP] Check Pods Manifest.lock */,
+				96354C1F2663D2AA00144938 /* Sources */,
+				96354C202663D2AA00144938 /* Frameworks */,
+				96354C212663D2AA00144938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96354C252663D2AA00144938 /* PBXTargetDependency */,
+			);
+			name = FurkanTaskTests;
+			productName = WordpressiOSTests;
+			productReference = 96354C232663D2AA00144938 /* FurkanTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96354C2D2663D2AA00144938 /* FurkanTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96354C3D2663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTaskUITests" */;
+			buildPhases = (
+				531B206D1705254792CEB271 /* [CP] Check Pods Manifest.lock */,
+				96354C2A2663D2AA00144938 /* Sources */,
+				96354C2B2663D2AA00144938 /* Frameworks */,
+				96354C2C2663D2AA00144938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96354C302663D2AA00144938 /* PBXTargetDependency */,
+			);
+			name = FurkanTaskUITests;
+			productName = WordpressiOSUITests;
+			productReference = 96354C2E2663D2AA00144938 /* FurkanTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96354C052663D2A900144938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					96354C0C2663D2A900144938 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					96354C222663D2AA00144938 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 96354C0C2663D2A900144938;
+					};
+					96354C2D2663D2AA00144938 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 96354C0C2663D2A900144938;
+					};
+				};
+			};
+			buildConfigurationList = 96354C082663D2A900144938 /* Build configuration list for PBXProject "FurkanTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96354C042663D2A900144938;
+			productRefGroup = 96354C0E2663D2A900144938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96354C0C2663D2A900144938 /* FurkanTask */,
+				96354C222663D2AA00144938 /* FurkanTaskTests */,
+				96354C2D2663D2AA00144938 /* FurkanTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96354C0B2663D2A900144938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DCF7B02667A37A002563A5 /* SideMenu.storyboard in Resources */,
+				96F1FEB42664DEC200644FD6 /* Main.storyboard in Resources */,
+				4C8817FF28D367CC00A88FAF /* NewsSource.storyboard in Resources */,
+				4C65014028D34833002B10C5 /* HomeCellTableViewCell.xib in Resources */,
+				4C65015028D362C7002B10C5 /* Detail.storyboard in Resources */,
+				96354C1D2663D2AA00144938 /* LaunchScreen.storyboard in Resources */,
+				5EECC77F27C28ACC000A5F5A /* Favorite.storyboard in Resources */,
+				96354C1A2663D2AA00144938 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C212663D2AA00144938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C2C2663D2AA00144938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9B32584EA89BEECD707CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FurkanTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531B206D1705254792CEB271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FurkanTask-FurkanTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE6CE792085313CB1550146 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FurkanTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96354C092663D2A900144938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8817FD28D367A400A88FAF /* NewsSourceVM.swift in Sources */,
+				96DCF7AC26679647002563A5 /* SideMenu.swift in Sources */,
+				4C65013828D340D4002B10C5 /* newsApiModel.swift in Sources */,
+				96DCF7AE266796F6002563A5 /* SideMenuVC.swift in Sources */,
+				96FEBF8D2664099300742D3C /* AppManager.swift in Sources */,
+				4C65014428D34DFF002B10C5 /* UIImageView+Extension.swift in Sources */,
+				4C65014B28D35317002B10C5 /* DetailVC.swift in Sources */,
+				96F1FEB12664BD1000644FD6 /* UIApplication+Extensions.swift in Sources */,
+				96ED574A266CC04F00303541 /* BaseVM.swift in Sources */,
+				96FEBF8F266409C600742D3C /* AppDirector.swift in Sources */,
+				4C88180128D3689400A88FAF /* FavoriteVM.swift in Sources */,
+				96ED5748266CC03A00303541 /* HomeVM.swift in Sources */,
+				96FEBF9526640CE100742D3C /* BaseVC.swift in Sources */,
+				96354C152663D2A900144938 /* HomeVC.swift in Sources */,
+				96B745B027C4076700DE99A4 /* UIViewController+Extensions.swift in Sources */,
+				5EECC77D27C28577000A5F5A /* FavoriteVC.swift in Sources */,
+				4C65014E28D3532D002B10C5 /* DetailVM.swift in Sources */,
+				96354C112663D2A900144938 /* AppDelegate.swift in Sources */,
+				96354C132663D2A900144938 /* SceneDelegate.swift in Sources */,
+				96ED5746266CBC8400303541 /* NetworkManager.swift in Sources */,
+				96B745AC27C29AC200DE99A4 /* UITabbarController+Extensions.swift in Sources */,
+				96F1FEB72664F77400644FD6 /* TabbarVC.swift in Sources */,
+				4C8817FB28D3677500A88FAF /* NewsSourceVC.swift in Sources */,
+				4C65013F28D34833002B10C5 /* HomeCellTableViewCell.swift in Sources */,
+				4C65014228D34872002B10C5 /* UITableViewCell+Extensions.swift in Sources */,
+				96DCF7B22667AAA1002563A5 /* SlideInTransition.swift in Sources */,
+				96FEBF9226640CB100742D3C /* SplashVC.swift in Sources */,
+				96B745AE27C29C8600DE99A4 /* AppConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C1F2663D2AA00144938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96354C282663D2AA00144938 /* FurkanTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96354C2A2663D2AA00144938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96354C332663D2AA00144938 /* FurkanTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96354C252663D2AA00144938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96354C0C2663D2A900144938 /* FurkanTask */;
+			targetProxy = 96354C242663D2AA00144938 /* PBXContainerItemProxy */;
+		};
+		96354C302663D2AA00144938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96354C0C2663D2A900144938 /* FurkanTask */;
+			targetProxy = 96354C2F2663D2AA00144938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96354C1B2663D2AA00144938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96354C1C2663D2AA00144938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		96F1FEB22664DEC100644FD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F1FEB32664DEC100644FD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96354C352663D2AA00144938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96354C362663D2AA00144938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96354C382663D2AA00144938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A4D9A52B5EE0589A9F4A57 /* Pods-FurkanTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmobey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96354C392663D2AA00144938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8930B549EC336CC5451DF2 /* Pods-FurkanTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmobey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96354C3B2663D2AA00144938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8231840DE5760BAC556A09F0 /* Pods-FurkanTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandal.FurkanTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurkanTask.app/FurkanTask";
+			};
+			name = Debug;
+		};
+		96354C3C2663D2AA00144938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D69B1F283310B979D00BC5 /* Pods-FurkanTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandal.FurkanTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurkanTask.app/FurkanTask";
+			};
+			name = Release;
+		};
+		96354C3E2663D2AA00144938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376940BDFB10A059934A39D3 /* Pods-FurkanTask-FurkanTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandal.FurkanTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurkanTask;
+			};
+			name = Debug;
+		};
+		96354C3F2663D2AA00144938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4019E55FA13B3D672CA423 /* Pods-FurkanTask-FurkanTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				INFOPLIST_FILE = FurkanTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandal.FurkanTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FurkanTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96354C082663D2A900144938 /* Build configuration list for PBXProject "FurkanTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96354C352663D2AA00144938 /* Debug */,
+				96354C362663D2AA00144938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96354C372663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96354C382663D2AA00144938 /* Debug */,
+				96354C392663D2AA00144938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96354C3A2663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96354C3B2663D2AA00144938 /* Debug */,
+				96354C3C2663D2AA00144938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96354C3D2663D2AA00144938 /* Build configuration list for PBXNativeTarget "FurkanTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96354C3E2663D2AA00144938 /* Debug */,
+				96354C3F2663D2AA00144938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96354C052663D2A900144938 /* Project object */;
+}

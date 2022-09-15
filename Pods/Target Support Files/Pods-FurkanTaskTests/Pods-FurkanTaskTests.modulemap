@@ -1,0 +1,6 @@
+framework module Pods_FurkanTaskTests {
+  umbrella header "Pods-FurkanTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
